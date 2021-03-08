@@ -1,0 +1,58 @@
+[
+{
+    "model": "products.product",
+    "pk": 1,
+    "fields": {
+        "title": "Coat",
+        "slug": "coat",
+        "description": "this is an awasome shirt.Buy it.",
+        "price": "39.99",
+        "image": "products/3017825248/3017825248.jpg",
+        "featured": false,
+        "active": true,
+        "timestamp": "2021-01-01T14:52:15.658Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 3,
+    "fields": {
+        "title": "Hat",
+        "slug": "hat",
+        "description": "This is hat.",
+        "price": "59.99",
+        "image": "products/2144262174/2144262174.jpg",
+        "featured": false,
+        "active": true,
+        "timestamp": "2021-01-01T14:52:15.658Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 5,
+    "fields": {
+        "title": "Bluz",
+        "slug": "t-shirt-hrwr",
+        "description": "fgrg",
+        "price": "39.99",
+        "image": "products/1695565971/1695565971.jpg",
+        "featured": false,
+        "active": true,
+        "timestamp": "2021-01-01T14:52:15.658Z"
+    }
+},
+{
+    "model": "products.product",
+    "pk": 6,
+    "fields": {
+        "title": "bag",
+        "slug": "bag",
+        "description": "bag is perfect",
+        "price": "89.99",
+        "image": "products/2568328839/2568328839.jpg",
+        "featured": true,
+        "active": true,
+        "timestamp": "2021-01-03T14:44:42.253Z"
+    }
+}
+]

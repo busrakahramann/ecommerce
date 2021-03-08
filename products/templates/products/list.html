@@ -1,0 +1,44 @@
+{% extends "base.html" %}
+{% load static %}
+
+{% block content %}
+<!--<head>-->
+<!--    <link href="{% static 'css/bootstrap.min.css' %}" rel="stylesheet">-->
+
+<!--  <style  type="text/css">-->
+<!--.card {-->
+
+<!--    display: block;-->
+<!--    width: 100%;-->
+<!--    height: 18rem;-->
+<!--    object-fit: cover;-->
+<!--   }-->
+<!--.card-img-top {-->
+<!--  width: 100%;-->
+<!--  height: 2rem;-->
+<!--  object-fit: cover;-->
+<!--}-->
+<!--.card-title{-->
+<!--  font-size: 15px;-->
+<!--}-->
+
+<!--  </style>-->
+<!--</head>-->
+        <div class="row">
+    {% for obj in object_list %}
+        <div class="col">
+
+        {% include 'products/snippets/card.html' with instance=obj %}
+
+        {% if forloop.counter|divisibleby:4 %}
+         </div></div><div class="row"><div class="col-12"><br/></div>
+        {% elif forloop.counter|divisibleby:4 %}
+            </div></div><div class="row"><div class="col-12"></div>
+        {% else %}
+         </div>
+        {% endif %}
+
+
+     {% endfor %}
+</div>
+{% endblock %}
